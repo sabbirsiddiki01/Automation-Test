@@ -1,0 +1,55 @@
+# SauceDemo Automation Project
+
+This project contains automated tests for the SauceDemo website using Selenium WebDriverIO and JavaScript.
+
+## Project Structure
+
+saucedemo-automation/ │ ├── tests/ │ ├── login.test.js │ ├── cart.test.js │ ├── checkout.test.js │ ├── pages/ │ ├── login.page.js │ ├── cart.page.js │ ├── checkout.page.js │ ├── utils/ │ ├── helpers.js │ ├── wdio.conf.js ├── package.json └── README
+
+
+## Setup
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/saucedemo-automation.git
+    cd saucedemo-automation
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Run tests:**
+    ```bash
+    npx wdio run wdio.conf.js
+    ```
+
+## Tests
+
+### Login Test
+- **File:** `tests/login.test.js`
+- **Description:** Tests the login functionality with valid credentials.
+
+### Cart Test
+- **File:** `tests/cart.test.js`
+- **Description:** Tests adding items to the cart and resetting the app state.
+
+### Checkout Test
+- **File:** `tests/checkout.test.js`
+- **Description:** Tests the complete purchase journey, including adding items to the cart, navigating to the checkout page, verifying product names and total price, and finishing the purchase.
+
+## Pages
+
+### Login Page
+- **File:** `pages/login.page.js`
+- **Description:** Contains methods for interacting with the login page.
+
+### Cart Page
+- **File:** `pages/cart.page.js`
+- **Description:** Contains methods for interacting with the cart page, including adding items to the cart and resetting the app state.
+
+### Checkout Page
+- **File:** `pages/checkout.page.js`
+- **Description:** Contains methods for interacting with the checkout page, including filling out the checkout form and finishing the purchase.
+

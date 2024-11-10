@@ -1,0 +1,16 @@
+{
+  "name": "ans01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^9.2.11",
+    "selenium-webdriver": "^4.0.0"
+  }
+}
